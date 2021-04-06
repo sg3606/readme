@@ -1,30 +1,25 @@
-# Professional README Generator Test
-  ## Description
-  When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.
+# README Generator
+quickly and easily create a README file by using a command-line application to generate one.\n
+[Index](./index.js)
 
-  ## Table of Content
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contribution](#contribution)
-  * [Test](#test)
-  * [Questions](#questions)
+## Finished Requirements
+GIVEN a command-line application that accepts user input\n
+WHEN I am prompted for information about my application repository\n
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions\n
+WHEN I enter my project title\n
+THEN this is displayed as the title of the README\n
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions\n
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests\n
+WHEN I choose a license for my application from a list of options\n
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under\n
+WHEN I enter my GitHub username\n
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile\n
+WHEN I enter my email address\n
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions\n
+WHEN I click on the links in the Table of Contents\n
+THEN I am taken to the corresponding section of the README\n
 
-  ## Installation
-  A command-line application that accepts user input
+![colorcode](./screenshot/screenshot1.png)
 
-  ## Usage
-  Quickly create a professional README for a new project
-
-  ## License
-  [![License: Apache-2.0](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=orange)](https://opensource.org/licenses/Apache-2.0)
-
-  ## Contribution
-  
-
-  ## Test
-  testing
-
-  ## Questions
-  My [Github](https://github.com/sg3606) and My [email](mailto:test@gmail.com)
-  
+## Generator
+[Test output](./README_Generated.md)
