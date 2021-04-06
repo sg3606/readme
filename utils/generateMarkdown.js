@@ -17,8 +17,13 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-    const section = `[![License: ${ license }](${ renderLicenseBadge(license) })](${ renderLicenseLink(license) })`;
-    return section
+    if (license == 'none'){
+      var emptysection = '';
+      return emptysection
+    } else {
+      var section = `[![License: ${ license }](${ renderLicenseBadge(license) })](${ renderLicenseLink(license) })`;
+      return section
+    }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -28,12 +33,12 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Content
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contribution](#contribution)
-  [Test](#test)
-  [Questions](#questions)
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[License](#license)
+  *[Contribution](#contribution)
+  *[Test](#test)
+  *[Questions](#questions)
 
   ## Installation
   ${data.installation}
@@ -51,8 +56,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
-
+  My [Github](https://github.com/${data.github}) and My [email](${data.email})
   `;
 }
 

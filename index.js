@@ -42,7 +42,8 @@ const questions = [
                     'LGPL-2.1', 
                     'LGPL-3.0', 
                     'MIT',
-                    'MPL-2.0'
+                    'MPL-2.0',
+                    'none'
                 ]
       },
       {
@@ -57,8 +58,13 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'questions',
-        message: 'Questions:',
+        name: 'github',
+        message: 'Github Name:',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Email:',
       },
 ];
 
